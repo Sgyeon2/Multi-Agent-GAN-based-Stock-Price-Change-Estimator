@@ -1,1 +1,2 @@
-# Multi-Agent-GAN-based-Stock-Price-Change-Estimator
+# Multi-Agent GAN-based Stock Price Change Estimator
+
