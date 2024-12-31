@@ -39,7 +39,7 @@
 
 아래 이미지는 전체 시스템의 데이터 흐름을 보여줍니다. 왼쪽은 **멀티에이전트 시스템**이고, 오른쪽은 **GAN 모델**로 구성됩니다.
 
-![Multi-Agent + GAN Architecture](attached_image.png)
+![인공지능 경영 drawio (1)](https://github.com/user-attachments/assets/c57d8942-5a5e-4b76-956d-84874e092f82)
 
 ### 2.1 멀티에이전트 시스템 구조
 
@@ -57,6 +57,9 @@
 4. **Mediator Agent**  
    - **Risk Seeking Agent**와 **Risk Adverse Agent**의 의견을 종합하여 **최종 시장 상태**를 결정  
    - 만약 두 에이전트 간 의견이 충돌할 경우, 추가적 규칙 또는 가중치를 통해 최종 `Up / Down / Flat` 상태를 산출
+  
+<img width="1002" alt="스크린샷 2024-12-29 오후 5 00 17" src="https://github.com/user-attachments/assets/4c2fa6fd-cefd-4d1a-a7a1-33338f480314" />
+
 
 ### 2.2 GAN 구조
 
@@ -85,6 +88,9 @@
    - (단기 이동평균 - 장기 이동평균) / 장기 이동평균  
    - 예를 들어, ratio ≥ 0.01이면 상승, ratio ≤ -0.01이면 하락, 그 사이면 횡보로 분류  
 
+![image](https://github.com/user-attachments/assets/3fc697a9-ee1e-4f69-9b49-706e58ce439f)
+![image (1)](https://github.com/user-attachments/assets/061c12ef-71a8-4c43-9e1b-e6481f70d09c)
+
 최종적으로, **Risk Seeking Agent**와 **Risk Adverse Agent**가 이 정보를 포함한 다양한 지표를 활용하여 각각 시장 상태를 판단한 뒤, **Mediator Agent**가 종합해 **최종 상태**를 확정합니다.
 
 ---
@@ -104,7 +110,9 @@
 ### 2. Attention 메커니즘
 
 - **시장 상태(또는 상태 임베딩)와 LSTM 출력**을 이용해, 시계열의 각 타임스텝에 대한 중요도를 계산  
-- 이렇게 계산된 중요도(Attention)는 예측에 보다 중요한 시점의 정보를 강조하는 데 사용  
+- 이렇게 계산된 중요도(Attention)는 예측에 보다 중요한 시점의 정보를 강조하는 데 사용
+
+
 
 ---
 
