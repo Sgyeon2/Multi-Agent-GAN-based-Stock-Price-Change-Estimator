@@ -58,7 +58,7 @@
 4. **Mediator Agent**  
    - **Risk Seeking Agent**와 **Risk Adverse Agent**의 의견을 종합하여 **최종 시장 상태**를 결정  
    - 만약 두 에이전트 간 의견이 충돌할 경우, 추가적 규칙 또는 가중치를 통해 최종 Up / Down / Flat 상태를 산출  
-
+<img width="1002" alt="스크린샷 2024-12-29 오후 5 00 17" src="https://github.com/user-attachments/assets/4c2fa6fd-cefd-4d1a-a7a1-33338f480314" />
 ---
 
 ### 2.2 GAN 구조
